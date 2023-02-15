@@ -8,6 +8,7 @@
   flex-wrap: wrap;
   justify-content: flex-end;
   gap: 4px;
+  width: 119px;
 }
 .header-navigation {
   font-weight: 500;
