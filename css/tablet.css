@@ -1,0 +1,88 @@
+@media screen and (min-width: 768px) {
+     .container{
+        max-width: 768px;     
+    }
+    /* ------------------------header-------------------- */
+    .header-list-contacts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 4px;
+}
+.header-navigation {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+.header-contacts {
+  
+font-weight: 400;
+font-size: 12px;
+line-height: 1.33;
+letter-spacing: 0.04em;
+}
+     /* ------------------------------hero---------------------------------------- */
+    .hero-text {
+  font-size: 56px;
+  line-height: 1.07;
+  margin-bottom: 40px;}
+   .hero{
+        max-width: 768px;
+    }
+    /* -----------------------------qualities----------------------------------- */
+    .qualities-list-name {
+    text-align: left;
+}
+.qualities-unordered {
+        gap: 24px;
+    }
+.qualities-list {
+  width: calc((100% - 24px) / 2);
+  margin-bottom: 72px;
+}
+/* -------------------------team---------------------- */
+.team-list-person {
+
+  width: calc((100% - 24px) / 2);
+  margin-bottom: 64px;
+}
+.team-list{
+    gap:24px;
+}
+/* ----------------------Customers----------------- */
+.cast {
+  width: calc((100% - 48px) / 3);
+  height: 88px;
+}
+/* ----------------------footer---------------------- */
+.footer-form {
+  display: flex;
+}
+.footer-email{
+    width: 264px;
+}
+.footer-container{
+    text-align: left;
+    align-items: stretch;
+    justify-content: normal;
+    padding-left: 108px;
+}
+.subscribe{
+    padding: 0;
+}
+.subscribe-name{
+    text-align: left;
+}
+.subscribe-btn{
+    margin-left: 24px;
+margin-right: 0px;
+}
+.soc-footer{
+    margin-left: 24px;
+}
+}

@@ -64,9 +64,9 @@ body {
   margin: auto;
 }
 .container {
-  max-width: 1158px;
-  padding-left: 15px;
-  padding-right: 15px;
+  width: 100%;
+  padding-left: 16px;
+  padding-right: 16px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -78,7 +78,6 @@ body {
 .header-general {
   display: flex;
 }
-
 .header-logo {
   font-family: "Raleway", sans-serif;
   font-weight: 800;
@@ -96,14 +95,7 @@ body {
   color: var(--navigation-color);
 }
 .header-navigation {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 40px;
+  display: none; 
 }
 
 .header-navigation-name {
@@ -131,8 +123,7 @@ body {
   margin-left: auto;
 }
 .header-list-contacts {
-  display: flex;
-  gap: 40px;
+  display: none;
 }
 
 .header-contacts {
@@ -171,12 +162,13 @@ body {
 }
 
 .hero-text {
-  font-size: 56px;
-  line-height: 1.07;
+  
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--white-color);
-  margin-bottom: 48px;
+  margin-bottom: 72px; 
+font-size: 36px;
+line-height: 1.11;
 }
 .hero-button {
   background: var(--logo-color);
@@ -203,26 +195,29 @@ body {
   letter-spacing: 0.04em;
   color: var(--white-color);
 }
+/* -------------------------------------qualities---------------------------- */
 .qualities {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
 
 .qualities-unordered {
   display: flex;
-  gap: 24px;
+  gap: 72px;
+  flex-wrap: wrap;
 }
 
 .qualities-list {
-  flex-basis: calc((100% - 72px) / 4);
+  width: 100%;
 }
 
 .qualities-list-name {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
   letter-spacing: 0.02em;
   margin-bottom: 8px;
+  text-align: center;
 }
 
 .qualities-list-text {
@@ -233,48 +228,17 @@ body {
 }
 
 .qual-icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 264px;
-  height: 112px;
-  background: var(--footer-logo-studio-color);
-  border-radius: 4px;
+  display: none;
 }
 /* -----------------------WORKS------------------------- */
 .works {
-  padding-top: 0;
-  padding-bottom: 120px;
-}
-.works-name {
-  font-size: 36px;
-  line-height: 1.11;
-  text-align: center;
-  letter-spacing: 0.02em;
-  text-transform: capitalize;
-  margin-bottom: 72px;
-}
-.works-list {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 24px;
-  justify-content: space-between;
-}
-.works-list-one {
-  width: calc((100% - 48px) / 3);
-}
-.works-list-two {
-  width: calc((100% - 48px) / 3);
-}
-.works-list-three {
-  width: calc((100% - 48px) / 3);
+  display: none;
 }
 /* --------------------------TEAM------------------------------------ */
 .team {
   background: var(--footer-logo-studio-color);
   padding-top: 120px;
-  padding-bottom: 120px;
+  padding-bottom: 112px;
 }
 
 .team-name {
@@ -287,7 +251,11 @@ body {
 }
 .team-list {
   display: flex;
-  gap: 24px;
+  gap: 72px;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
 }
 
 .team-list-name {
@@ -311,7 +279,7 @@ body {
   box-shadow: 0px 1px 6px rgb(46 47 66 / 8%), 0px 1px 1px rgb(46 47 66 / 16%),
     0px 2px 1px rgb(46 47 66 / 8%);
   border-radius: 0px 0px 4px 4px;
-  width: calc((100% - 72px) / 4);
+  width: 264px;
 }
 .container-team {
   padding-top: 32px;
@@ -347,7 +315,7 @@ body {
 }
 /* ----------------------CUSTOMERS------------------ */
 .customers {
-  padding-top: 130px;
+  padding-top: 112px;
   padding-bottom: 120px;
 }
 .sec-name {
@@ -362,10 +330,11 @@ body {
 .cast-list {
   display: flex;
   gap: 24px;
+  flex-wrap: wrap;
 }
 
 .cast {
-  width: calc((100% - 120px) / 6);
+  width: calc((100% - 48px) / 2);
   height: 88px;
 }
 .cast-link {
@@ -396,16 +365,23 @@ body {
 /* -----------------------------FOOTER------------------------ */
 .footer {
   background: var(--navigation-color);
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
 .footer-container {
   display: flex;
   flex-wrap: wrap;
   margin: auto;
   padding: 0;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.logo-container {
+  align-items: center;
 }
 .footer-logo {
+  display: block;
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 18px;
@@ -413,7 +389,7 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--logo-color);
-  margin-bottom: 8px;
+  margin-bottom: 16px;
 }
 .footer-logo-studio {
   color: var(--footer-logo-studio-color);
@@ -424,11 +400,10 @@ body {
   letter-spacing: 0.02em;
   color: var(--footer-text-color);
   width: 264px;
-  margin-top: 16px;
+  margin-bottom: 72px;
+  text-align: start;
 }
-.soc-footer {
-  margin-left: 120px;
-}
+
 .soc-footer-text {
   color: var(--white-color);
   font-weight: 500;
@@ -436,11 +411,13 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   margin-bottom: 16px;
+  text-align: center;
 }
 .footer-soc-list {
   display: flex;
   justify-content: center;
   gap: 16px;
+  margin-bottom: 72px;
 }
 
 .footer-soc-items {
@@ -464,7 +441,11 @@ body {
   background-color: var(--hover-footer);
 }
 .subscribe {
-  margin-left: 80px;
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  justify-content: center;
+  align-items: center;
 }
 .subscribe-name {
   font-weight: 500;
@@ -473,20 +454,20 @@ body {
   letter-spacing: 0.02em;
   color: var(--white-color);
   margin-bottom: 16px;
+  text-align: center;
 }
-.footer-form {
-  display: flex;
-}
+
 .footer-email {
   display: flex;
   box-sizing: border-box;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
-  width: 264px;
+  width: 100%;
   height: 40px;
   background-color: var(--navigation-color);
   text-indent: 16px;
+  margin-bottom: 16px;
 }
 .footer-email::placeholder {
   font-size: 12px;
@@ -496,6 +477,8 @@ body {
 }
 .subscribe-btn {
   display: flex;
+  margin-left: auto;
+  margin-right: auto;
   height: 40px;
   background: var(--logo-color);
   border-radius: 4px;
@@ -503,7 +486,7 @@ body {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
-  margin-left: 24px;
+
   align-items: center;
   justify-content: center;
   min-width: 165px;
@@ -805,7 +788,7 @@ body {
 .privacy {
   color: var(--logo-color);
   margin-left: 5px;
-   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .privacy:is(:hover, :focus) {
   color: var(--hover-color);

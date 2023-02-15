@@ -1,0 +1,104 @@
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1440px;
+    padding-left: 156px;
+    padding-right: 156px;
+  }
+  /* ------------------------header-------------------- */
+   .header-contacts {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  font-style: normal;}
+
+  /* ------------------------------hero---------------------------------------- */
+  .hero-text {
+    font-size: 56px;
+    line-height: 1.07;
+    margin-bottom: 48px;
+  }
+   .hero{
+        max-width: 1440px;
+    }
+  /* -----------------------------qualities----------------------------------- */
+  .qualities-list {
+    flex-basis: calc((100% - 72px) / 4);
+    width: 100%;
+  }
+  .qualities-unordered {
+    padding-left: 0;
+    padding-right: 0;
+    gap: 24px;
+  }
+
+  .qual-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 264px;
+    height: 112px;
+    background: var(--footer-logo-studio-color);
+    border-radius: 4px;
+  }
+  .qualities-list-name {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+  }
+  /* -----------------------------Our-works------------------------------- */
+  .works {
+    display: flex;
+    padding-top: 0;
+    padding-bottom: 120px;
+  }
+  .works-name {
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    margin-bottom: 72px;
+  }
+  .works-list {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: space-between;
+  }
+  .works-list-one {
+    width: calc((100% - 48px) / 3);
+  }
+  .works-list-two {
+    width: calc((100% - 48px) / 3);
+  }
+  .works-list-three {
+    width: calc((100% - 48px) / 3);
+  }
+  /* -------------------------team---------------------- */
+
+  .team-list-person {
+    width: calc((100% - 72px) / 4);
+  }
+  /* ----------------------customers------------------------ */
+  .cast {
+    width: calc((100% - 120px) / 6);
+  }
+  /* -------------------Footer---------------------------- */
+  .subscribe {
+    margin-left: 80px;
+  }
+  .footer-email {
+    width: 264;
+  }
+  .soc-footer {
+    margin-left: 120px;
+  }
+  .subscribe-btn {
+    margin-left: 24px;
+  }
+  .footer-container {
+    flex-wrap: nowrap;
+  }
+}
