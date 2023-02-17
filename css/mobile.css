@@ -16,8 +16,21 @@
     padding-left: 82px;
     padding-right: 82px;
   }
+  .container-team {
+    width: 264px;
+  }
   /* ---------------------footer------------------------ */
   .footer-email {
     width: 398px;
+  }
+  /* -------------------------Modal------------------ */
+   .modal {
+    width: 408px;
+  }
+  .modal-btn-container{
+max-width: 1440px;
+padding-left: 15px;
+padding-right: 15px;
+margin: auto;
   }
 }

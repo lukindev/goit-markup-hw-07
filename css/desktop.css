@@ -1,12 +1,14 @@
 @media screen and (min-width: 1200px) {
   .container {
+    width: 1128px;
     max-width: 1440px;
-    padding-left: 156px;
-    padding-right: 156px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: auto;
   }
   /* ------------------------header-------------------- */
   .header {
-    min-width: 1440px;
+    max-width: 1440px;
   border-bottom: 1px solid #e7e9fc;
   margin: auto;
 }
@@ -15,6 +17,13 @@
   line-height: 1.5;
   letter-spacing: 0.02em;
   font-style: normal;}
+  .header-list-contacts {
+    width: 344px;
+    gap: 40px;
+  }
+  .header-navigation-name {
+  padding-bottom: 28px;}
+
 
   /* ------------------------------hero---------------------------------------- */
   .hero-text {
@@ -26,15 +35,18 @@
         max-width: 1440px;
     }
   /* -----------------------------qualities----------------------------------- */
+  .qualities{
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
   .qualities-list {
     flex-basis: calc((100% - 72px) / 4);
     width: 100%;
   }
   .qualities-unordered {
-    padding-left: 0;
-    padding-right: 0;
-    gap: 24px;
-  }
+    padding: 0;
+    width: 1128px;
+    margin: auto; }
 
   .qual-icon {
     display: flex;
@@ -82,15 +94,28 @@
     width: calc((100% - 48px) / 3);
   }
   /* -------------------------team---------------------- */
-
+.team{
+    padding-bottom: 120px;
+}
   .team-list-person {
     width: calc((100% - 72px) / 4);
   }
+  .team-list{ padding: 0px;}
   /* ----------------------customers------------------------ */
   .cast {
     width: calc((100% - 120px) / 6);
   }
+  .customers{
+    padding-top: 120px;
+    margin: 0px;
+  }
   /* -------------------Footer---------------------------- */
+  .footer{
+    padding: 0;
+  }
+.footer-text{
+margin: 0;
+}
   .subscribe {
     margin-left: 80px;
   }
@@ -105,5 +130,7 @@
   }
   .footer-container {
     flex-wrap: nowrap;
+    padding-top: 100px;
+    padding-bottom: 100px;
   }
 }
