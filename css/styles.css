@@ -156,12 +156,18 @@ body {
   border: none;
   cursor: pointer;
 }
+.current{
+  color:var(--hover-color)
+}
 /* ------------------------MOBILE-MENU----------------------- */
 .mob-menu.is-hidden {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
   height: 796px;
+}
+.mob-current{
+  color:var(--hover-color) !important;
 }
 .mob-menu {
   display: flex;
@@ -291,10 +297,10 @@ body {
 
 /* --------------------------HERO------------------------ */
 .hero {
-  padding-top: 188px;
+  padding-top: 112px;
   padding-bottom: 188px;
   background: var(--navigation-color);
-  background-image: var(--hero-grd), url(../images/hero-320-1x\(1\).jpg);
+  background-image: var(--hero-grd), url(../images/hero-320-1x.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -305,7 +311,7 @@ body {
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
   .hero {
-    background-image: var(--hero-grd), url(../images/hero-320-2x\(1\).jpg);
+    background-image: var(--hero-grd), url(../images/hero-320-2x.jpg);
   }
 }
 
@@ -376,6 +382,7 @@ body {
 
 .qual-icon {
   display: none;
+  margin-bottom: 32px;
 }
 /* -----------------------WORKS------------------------- */
 .works {

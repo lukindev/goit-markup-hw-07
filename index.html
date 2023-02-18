@@ -29,7 +29,7 @@
 
         <ul class="header-navigation list">
           <li class="hader-navigation-list">
-            <a href="../index.html" class="header-navigation-name link underline">Studio</a>
+            <a href="../index.html" class="header-navigation-name link underline current">Studio</a>
           </li>
           <li class="header-navigation-list">
             <a href="./portfolio.html" class="header-navigation-name link"
@@ -68,7 +68,7 @@
       
     
 
-<div class="mob-menu is-hidden" data-menu="">
+<div class="mob-menu is-hidden is-open" data-menu="">
                 <div class="mob-container">
                     <div>
                         <button type="button" class="mob-btn-close" data-menu-close="">
@@ -79,7 +79,7 @@
                         <nav>
                             <ul class="mob-menu-item">
                                 <li class="mob-menu-items list">
-                                    <a class="mob-menu-link link" href="./index.html">Studio</a></li>
+                                    <a class="mob-menu-link link  mob-current" href="./index.html">Studio</a></li>
                                 <li class="mob-menu-items list">
                                     <a class="mob-menu-link link" href="./portfolio.html">Portfolio</a></li>
                                 <li class="mob-menu-items list">
@@ -133,6 +133,7 @@
         <button type="button"  data-modal-open class="hero-button hero-button-orderservice">
           Order Service
         </button>
+       </div>
       </section>
       <section class="qualities">
         <div class="container">
@@ -225,6 +226,7 @@
             />
           </li>
         </ul>
+        </div>
       </section>
       <!-- team -->
       <section class="team">
@@ -236,8 +238,8 @@
               src="./images/mark-1x.jpg"
               srcset="./images/mark-1x.jpg 1x, ./images/mark-2x.jpg 2x"
               alt="Mark Guerrero"
-              width="264px"
-              height="260px"
+              width="264"
+              height="260"
             />
             <div class="container-team">
             <h3 class="team-list-name">Mark Guerrero</h3>
@@ -526,9 +528,8 @@
     <textarea class="modal-textarea" name="Comment" rows="10" placeholder="Text input" id="user-comment"></textarea>
     </div>
     </div>
-    <div class="modal-container
-">
-    <label class="form-container" for="checkbox">
+    <div class="modal-container">
+    <label class="form-container" for="user-comment">
     </label>
     
     <div class="modal-check">
@@ -546,6 +547,13 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
-    <script src="./js/menu.js"></script>
+    <!-- <script src="./js/menu.js"></script> -->
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>
