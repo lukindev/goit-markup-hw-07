@@ -1,6 +1,6 @@
 @media screen and (min-width: 1200px) {
   .container {
-    min-width: 1128px;
+    width: 1128px;
     max-width: 1440px;
     padding-left: 15px;
     padding-right: 15px;
