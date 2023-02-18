@@ -40,8 +40,15 @@ margin-right: 123px;
     margin-bottom: 40px;
   }
   .hero {
-    max-width: 768px;
+    background-image:var(--hero-grd), url(../images/hero-tablet-768\(1x\)\(1\).jpg);
   }
+  @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero {
+    background-image:var(--hero-grd), url(../images/hero-tablet-768\(2x\)\(1\).jpg);
+    }
+}
   /* -----------------------------qualities----------------------------------- */
   .qualities-list-name {
     text-align: left;

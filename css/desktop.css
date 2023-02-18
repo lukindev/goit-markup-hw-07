@@ -32,8 +32,16 @@
     margin-bottom: 48px;
   }
    .hero{
-        max-width: 1440px;
+    max-width: 1440px;
+    background-image: var(--hero-grd), url(../images/hero-desctop-1440\(1x\)\(1\).jpg);
+  }
+  @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero {
+    background-image: var(--hero-grd), url(../images/hero-desctop-1440\(2x\)\(1\).jpg);
     }
+}
   /* -----------------------------qualities----------------------------------- */
   .qualities{
     padding-top: 120px;

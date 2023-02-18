@@ -2,9 +2,14 @@
   .container {
     max-width: 428px;
   }
+  /* ----------------mobile-menu----------- */
+  .mob-soc-list {
+  
+  gap: 56px;
+}
   /* --------------------hero------------------ */
   .hero {
-    max-width: 428px;
+    min-width: 480px;
   }
   /* -----------------------------qualities----------------------------------- */
   .qualities-unordered {

@@ -174,11 +174,11 @@ body {
   height: 100vh;
   background-color: var(--white-color);
   padding: 40px;
-  padding-top: 40px;
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 .mob-container {
+  width: 100%;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -264,7 +264,7 @@ body {
 .mob-soc-list {
   display: flex;
   justify-content: center;
-  gap: 56px;
+  gap: 30px;
 }
 .mob-soc-items {
   width: 40px;
@@ -292,12 +292,19 @@ body {
   padding-top: 188px;
   padding-bottom: 188px;
   background: var(--navigation-color);
-  background: var(--hero-grd), url(../images/people-office.jpg);
+  background-image: var(--hero-grd), url(../images/hero-320-1x\(1\).jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   max-width: 1440px;
   margin: auto;
+}
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero {
+    background-image:var(--hero-grd), url(../images/hero-320-2x\(1\).jpg);
+    }
 }
 
 .hero-text {
@@ -419,6 +426,7 @@ body {
   border-radius: 0px 0px 4px 4px;
   width: 264px;
 }
+
 .container-team {
   padding-top: 32px;
   padding-bottom: 32px;
