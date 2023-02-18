@@ -35,15 +35,13 @@
   .hero {
     max-width: 1440px;
     padding-top: 188px;
-    background-image: var(--hero-grd),
-      url(../images/hero-desctop-1440-1x.jpg);
+    background-image: var(--hero-grd), url(../images/hero-desctop-1440-1x.jpg);
   }
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     .hero {
-      background-image: var(--hero-grd),
-        url(../images/hero-desctop-1440-2x.jpg);
+      background-image: var(--hero-grd), url(../images/hero-desctop-1440-2x.jpg);
     }
   }
   /* -----------------------------qualities----------------------------------- */
